@@ -1,144 +1,54 @@
 body {
     background-image: url(../images/2206_w019_n001_601a_p30_601.jpg);
-    background-repeat: no-repeat;
-    /* background-color: rgb(68, 67, 67);*/
 }
 
-main {
-    width: 550px;
-    height: 880px;
-    margin-top: 10px;
-    margin-left: calc((100% - 550px) / 2);
-    background-color: rgb(219, 217, 217);
+#inputTable {
+    width: 600px;
+    height: auto;
+    margin: 150px 0 0 calc((100% - 600px) / 2);
     box-shadow: 0px 5px 10px 10px rgb(36, 35, 35);
-    /*background-image: url(../images/depositphotos_3423532-stock-illustration-gray-metal-background.jpg);*/
+    background-image: url(../images/depositphotos_3423532-stock-illustration-gray-metal-background.jpg);
+    opacity: 0.7;
 }
 
-#blankForm {
-    height: 750px;
-    padding-top: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
+#outputTable {
+    width: 600px;
+    height: auto;
+    margin: 450px 0 0 calc((100% - 600px) / 2);
 }
 
-#fill {
-    padding-bottom: 70px;
+#input,
+input {
+    margin-left: 33%;
+    width: 200px !important;
 }
 
-.inpBord {
-    height: 30px;
-    border-radius: 3px;
-    border-color: rgb(212, 212, 212);
-    border-width: 1px;
+label {
+    text-align: center;
 }
 
-.mainInfo {
-    margin-top: 15px;
-    width: 160px;
+input {
+    width: 200px !important;
 }
 
-.names {
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 13px;
-    color: rgb(61, 61, 61);
+th, thead, td {
+    text-align: center !important;
+    padding: 0 50px 0 50px;
 }
 
-#sec {
-    padding-left: 105px;
+.save {
+    width: 100px;
+    margin: 20px 0 10px 50px !important;
 }
 
-#third {
-    padding-left: 88px;
-    padding-top: 10px;
-    margin-block-start: 1px;
+/* ========overWrite BootStrap========= */
+.modal, .modal-content {
+    background-color: #ffffff00 !important;
+    border: none !important;
 }
 
-.selectsName {
-    display: inline-block;
-    padding-bottom: 12px;
+.modal-header {
+    border: none !important;
 }
 
-#gender {
-    margin-left: 202px;
-}
-
-.dates {
-    width: 70px;
-}
-
-#maWo {
-    margin-left: 50px;
-    width: 219px;
-    color: grey;
-}
-
-#secondF>* {
-    display: inline-block;
-}
-
-#b-d-g {
-    padding-top: 70px;
-}
-
-.opMW {
-    color: black;
-}
-
-#dayName {
-    padding-left: 38px;
-}
-
-#yearName {
-    padding-left: 48px;
-}
-
-.street {
-    width: 490px;
-    margin-top: 15px;
-}
-
-#streetB {
-    margin-top: 25px;
-}
-
-#land {
-    margin-top: 50px;
-    margin-left: -115px;
-    width: 230px;
-}
-
-#land2 {
-    margin-top: 50px;
-    margin-left: 16px;
-    width: 240px;
-}
-
-#state {
-    margin-left: 228px;
-}
-
-#submit {
-    margin-left: 110px;
-    margin-top: 78px;
-    width: 237px;
-    height: 30px;
-    color: white;
-    background-color: #3b3b3a;
-}
-
-#best {
-    margin-left: 30px;
-    margin-top: 80px;
-    font-size: 13px;
-    width: 120px;
-    color: rgb(77, 76, 76);
-}
-
-#logo {
-    margin-left: 150px;
-    margin-top: -48px;
-    opacity: 0.6;
-    width: 60px;
-    height: 70px;
-}
+/* ===================================== */
