@@ -5,8 +5,8 @@ class UserControler
 
     public static function index()
     {
-        $users = User::all();
-        return $users;
+        $plants = User::all();
+        return $plants;
     }
 
     public static function show()
@@ -18,6 +18,7 @@ class UserControler
     public static function store()
     {
         User::create();
+        
     }
 
     public static function update()

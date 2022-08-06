@@ -7,15 +7,22 @@
                             <table class="table table-dark table-hover">
                                 <button type="button" style="background-color: #ffffff00!important" class=" modal-header btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 <tr>
-                                    <th>NAME</th>
-                                    <th>SURNAME</th>
+                                    <th>NAME IN LTU</th>
+                                    <th>NAME IN LOT</th>
+                                    <th>IS IT A TREE?</th>
+                                    <th>AGE</th>
+                                    <th>HEIGHT</th>
                                     <th>EDIT</th>
                                     <th>DELETE</th>
                                 </tr>
-                                <?php foreach ($users as $user) { ?>
+                                <?php 
+                                foreach ($users as $user) { ?>
                                     <tr>
                                         <td><?= $user->name ?></td>
                                         <td><?= $user->surname ?></td>
+                                        <td><?= $user->bool == 1 ? "TREE" : " SOMETHING ELSE"?></td>
+                                        <td><?= $user->age ?></td>
+                                        <td><?= $user->height ?></td>
                                         <td>
                                             <form action="" method="post">
                                                 <input type="hidden" name="id" value="<?= $user->id ?>">
@@ -36,3 +43,4 @@
                 </div>
             </div>
         </div>
+        <!-- <?php print_r($prob); ?> -->
