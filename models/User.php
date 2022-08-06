@@ -21,11 +21,11 @@ class User{
 
     }
 
-    public static function find($id)
+    public static function find(string $name)
     {
         $db = new ConDataBase();
-        $sql = "SELECT * FROM `registration` where `id` =". $id;
 
+        $sql = "SELECT * FROM registration WHERE name = '".$name."'";
         $result = $db->conn->query($sql);
 
         while($row = $result->fetch_assoc()) {

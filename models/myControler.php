@@ -14,6 +14,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $_SESSION['errName'][] = "Your name should be just letters<br>";
             $err++;
         }
+
+        $existingPlant = User::find($_POST['name']);
+        if ($existingPlant != null) {
+            $_SESSION['errName'][] = "Already exists<br>";
+            $err++;
+        }
         
         // ----------------------------VALIDATION FOR LOT_NAME---------------------------------------------//
         if (empty($_POST['surname'])) {                                          
@@ -62,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         } 
 
         // ----------------------------TAIL OF FUNCTION---------------------------------------------//
-        
+
         if ($err == 0) {
             UserControler::store();}
         
